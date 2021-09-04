@@ -76,7 +76,7 @@ require 'php/php-controller.php';
                             <input class="form-control" type="password" name="password" id="password"
                                 onchange="this.setAttribute('value', this.value);" value="" data-toggle="popover"
                                 data-trigger="hover" data-placement="top"
-                                data-content="Password must contain 8 to 20 characters consisting a letter and a number" required>
+                                data-content="Password must contain 8 to 20 alphanumeric character" required>
                             <label>Password</label>
                             <div class="input-group-append">
                                 <span class="far fa-eye-slash input-group-text" id="togglePassword"></span>
@@ -94,7 +94,7 @@ require 'php/php-controller.php';
                             <button id="button-show" class="form-control button" type="submit" style="display:none;"
                                 disabled><i class="fas fa-spinner fa-spin"></i> </button>
                             <input id="button-hide" class="form-control button" type="submit" name="signup"
-                                value="Signup">
+                                value="Register">
                         </div>
                         <div class="link login-link text-center">Have an Account? <a href="login">Login</a></div>
                     </form>

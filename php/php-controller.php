@@ -252,10 +252,10 @@ $name = "";
 
     /* Admin */
     /* Class Change Name */
-    if(isset($_GET['change-name'])){
-         $varivari =  $_GET['varivari'];
-         $id =  $_GET['id'];
-         $changename = $_GET['change-name'];
+    if(isset($_POST['change-name'])){
+         $varivari =  $_POST['varivari'];
+         $id =  $_POST['id'];
+         $changename = $_POST['change-name'];
          $query  = $conn->prepare("UPDATE classadmin SET classname = :classname WHERE id = :id");
         $query->execute([':classname' => $changename, ':id' => $id]);
      }

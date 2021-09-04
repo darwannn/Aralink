@@ -777,7 +777,7 @@ if (!empty($fetch['images'])) {
                     <div class="modal-header">
                         <h5 class="modal-title mx-auto">Change Name</h5>
                     </div>
-                    <form action="admin.php" method="get" class="m-0 p-0">
+                    <form action="admin.php" method="post" class="m-0 p-0">
                         <div class="modal-body text-center">
                             <div class="form-group p-0 m-0">
                                 <input type="hidden" value="<?php  echo $fetch['id']  ?>" name="id">

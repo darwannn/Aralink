@@ -88,7 +88,7 @@ if($femail != false){
                             <input class="form-control" type="password" name="password" id="password"
                                 onchange="this.setAttribute('value', this.value);" value="" data-toggle="popover"
                                 data-trigger="hover" data-placement="top"
-                                data-content="Password must contain 8 to 20 characters consisting a letter and a number" required>
+                                data-content="Password must contain 8 to 20 alphanumeric character" required>
                             <label>Password</label>
                             <div class="input-group-append">
                                 <span class="far fa-eye-slash input-group-text" id="togglePassword"></span>
