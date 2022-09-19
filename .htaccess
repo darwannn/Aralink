@@ -1,19 +1,19 @@
 RewriteEngine On
-ErrorDocument 400 http://aralink.xyz/error
-ErrorDocument 403 http://aralink.xyz/error
-ErrorDocument 404 http://aralink.xyz/error
-ErrorDocument 405 http://aralink.xyz/error
-ErrorDocument 408 http://aralink.xyz/error
-ErrorDocument 500 http://aralink.xyz/error
-ErrorDocument 502 http://aralink.xyz/error
-ErrorDocument 504 http://aralink.xyz/error
+ErrorDocument 400 /AraLink/error
+ErrorDocument 403 /AraLink/error
+ErrorDocument 404 /AraLink/error
+ErrorDocument 405 /AraLink/error
+ErrorDocument 408 /AraLink/error
+ErrorDocument 500 /AraLink/error
+ErrorDocument 502 /AraLink/error
+ErrorDocument 504 /AraLink/error
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
